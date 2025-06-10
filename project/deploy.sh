@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+cd "$(dirname "$0")"
 
 # Deployment script for Gandi.net
 echo "Starting deployment to Gandi.net..."

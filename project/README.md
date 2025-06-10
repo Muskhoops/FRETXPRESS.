@@ -32,13 +32,13 @@ git remote add gandi git+ssh://961ac15e-4525-11f0-9146-00163eada87b@git.sd6.gpaa
 
 4. **Déployer :**
 ```bash
-git push gandi master
+./deploy.sh
 ```
 
 ### Structure du projet
 - `src/` - Code source React/Vite
 - `dist/` - Fichiers buildés (générés automatiquement)
-- `.gandi.yml` - Configuration de déploiement Gandi
+- `.gandi.yml` - Configuration de déploiement Gandi (à la racine du dépôt)
 
 ### Commandes utiles
 - `npm run dev` - Serveur de développement

@@ -1,10 +1,13 @@
-# Gandi.net deployment configuration
+# Configuration Gandi Simple Hosting
 build:
-  # Build the Vite project
-  - npm install
+  # Installation des dépendances
+  - npm ci --production=false
+  # Build du projet Vite
   - npm run build
 
-# Deploy the built files
+# Déploiement
 deploy:
-  # Copy built files to web directory
-  - cp -r dist/* $GANDI_WEB_ROOT/
+  # Le dossier dist contient les fichiers buildés
+  source: dist/
+  # Destination sur le serveur Gandi
+  destination: /

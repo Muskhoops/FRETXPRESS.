@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "chmod +x deploy.sh && ./deploy.sh"
+    "deploy:build": "npm run build",
+    "deploy:gandi": "git add . && git commit -m 'Deploy to Gandi' && git push gandi master"
   },
   "dependencies": {
     "framer-motion": "^11.0.3",

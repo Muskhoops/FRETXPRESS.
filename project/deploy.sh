@@ -9,8 +9,9 @@ npm run build
 
 # Add git remote if not exists
 if ! git remote get-url gandi > /dev/null 2>&1; then
-    echo "Adding Gandi git remote..."
-    git remote add gandi git+ssh://961ac15e-4525-11f0-9146-00163eada87b@git.sd6.gpaas.net/default.git
+  echo "Adding Gandi git remote..."
+  git remote add gandi \
+    git+ssh://961ac15e-4525-11f0-9146-00163eada87b@git.sd6.gpaas.net/default.git
 fi
 
 # Add all files to git

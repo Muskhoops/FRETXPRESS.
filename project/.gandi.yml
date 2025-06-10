@@ -1,0 +1,10 @@
+# Gandi.net deployment configuration
+build:
+  # Build the Vite project
+  - npm install
+  - npm run build
+
+# Deploy the built files
+deploy:
+  # Copy built files to web directory
+  - cp -r dist/* $GANDI_WEB_ROOT/
